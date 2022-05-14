@@ -1,81 +1,49 @@
-# ElevadorporVoz
-Projeto Elevador com Arduino com Ênfase no Reconhecimento de Voz
-
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-<p align="left">
+<h3 align="center">Fundação Centro de Análise, Pesquisa e Inovação Tecnológica - FUCAPI</h3>
+<p align="CENTER">
   <a href="https://github.com/leocoout/MyPalette">
-    <img src="https://i.imgur.com/UE5w6IH.png" alt="Logo" width="80" height="80">
+    <img src="https://github.com/dihgab/ElevadorporVoz/blob/main/default/LogoFU.png" alt="Logo" width="80" height="80">
   </a>
 <br />
 <p align="center">
   <a href="https://github.com/leocoout/MyPalette">
-    <img src="https://i.imgur.com/UE5w6IH.png" alt="Logo" width="80" height="80">
+    <img src="https://github.com/dihgab/ElevadorporVoz/blob/main/default/ElevadorImage.jpg" alt="Logo" width="500" height="500">
   </a>
 
-  <h3 align="center">MyPalette</h3>
+  <h3 align="center">Elevador por Voz</h3>
 
   <p align="center">
-    Suas cores. Agora.
+    Projeto Elevador com Arduino com Ênfase no Reconhecimento de Voz
     <br/>
-    <a href="#instalacao">Instalação</a>
+    <a href="#instalação">Instalação</a>
     ·
     <a href="#roadmap">Roadmap</a>
-    ·
-    <a href="#contato">Contato</a>
   </p>
 </p>
 
 
 ## Sobre o projeto
-MyPalette é o app que te permite a qualquer hora em qualquer lugar salvar as cores dos seus momentos favoritos para utilizar novamente mais tarde em seu banner, folder, site, logo e onde mais quiser. Basta permitir o acesso a camera, apontar para o alvo e pronto! Voce poderá o hexadecimal da cor, copiar para mandar para outras pessoas ou salvar para mais tarde. Não gostou da cor? Você pode remove-la tocando e segurando na cor que não deseja mais.
+Neste projeto, desenvolve-se o esquema de ligação e código de um elevador que tem como intuito reconhecer um dado andar solicitado e deslocar-se até este, um projeto que necessita de funções simultâneas entre motor, sensor de posição e botões de localização.
 
-## Instalaçao
-Para fazer a instalação das dependencias e ter certeza de que o projeto funcione corretamente, utilize [Xcode 12.0](https://developer.apple.com).
-O projeto utiliza [Cocoapods](https://cocoapods.org) como gerenciador de dependências padrao. Siga as etapas abaixo para executar o projeto:
+Como sensor base para o reconhecimento de posição do Projeto Elevador Arduino, utilizou-se um Módulo Reed Switch que em conjunto com um imã de neodímio fixado no case de deslocamento tinha a função de identificar o andar em que se encontrava e interagir com os demais componentes do projeto.
 
-1. clone o projeto:
-  ```sh
-   git clone https://github.com/leocoout/MyPalette.git
-   ```
-   
-2. instale as dependencias 
-  ```sh
-   pod install
-   ```
-3. abra o projeto através de ```MyPalette.xcworkspace```
+## Instalação
+Para fazer a instalação das bibliotecas e ter certeza de que o projeto funcione corretamente, utilize [Arduino IDE](https://www.arduino.cc/en/software).
+O projeto utiliza Sketch como gerenciador de dependências padrão. Utilizando Git no Terminal:
+```sh
+$ git https://github.com/dihgab/ElevadorporVoz
+$ cd ElevadorporVoz
+$ npm install
+```
 
 ## Roadmap
-Acompanhe o roadmap das próximas features do app.
+Acompanhe o roadmap das próximas features do projeto.
 
 🚀 &nbsp;**Features**: Abaixo estao listadas as features previstas para as próximas releases
 
 | Status | Objetivo | Progresso | Release | 
 | :---: | :--- | --- | --- |
-| ✔ | Integraçao com MyPaletteKit para capturar cor utilizando a camera | `Concluído`| <a href=https://github.com/leocoout/MyPalette/releases/tag/alpha_1.0>alpha_1.0</a> |
-| ✔ | Integraçao com MyPaletteKit para converter cor em hexadecimal | `Concluído`| <a href=https://github.com/leocoout/MyPalette/releases/tag/alpha_1.0>alpha_1.0</a> |
-| ✔ | Integraçao com MyPaletteKit para salvar cor localmente | `Concluído`| <a href=https://github.com/leocoout/MyPalette/releases/tag/alpha_1.0>alpha_1.0</a> |
-| ✔ | Integraçao com MyPaletteKit para apagar cores salvas | `Concluído`| <a href=https://github.com/leocoout/MyPalette/releases/tag/alpha_1.0>alpha_1.0</a> |
-| ✔ | Tela de detalhes com detalhes da cor | `Concluído`| <a href=https://github.com/leocoout/MyPalette/releases/tag/alpha_1.0>alpha_1.0</a> |
-| ✔ | Animações de splashscreen e interface | `Concluído`| <a href=https://github.com/leocoout/MyPalette/releases/tag/alpha_1.0>alpha_1.0</a> |
-| 🕒 | Melhorias de interface 1.0 | | |
-| 🕒 | Onboarding customizado | | |
-| 🕒 | Acessibilidade para daltônicos | | |
-| 🕒 | Suporte para lingua inglesa | | |
-| 🕒 | Paleta de cores com variações de uma mesma cor na tela de detalhes, como variações mais claras e mais escuras | | |
-| 🕒 | Tela de ajustes | | |
-| 🕒 | Melhorias de interface 2.0 | | |
-| 🕒 | Navegaçao por deeplinking e compartilhamento de cores | | |
-| 🕒 | Navegaçao no app por abas | | |
-| 🕒 | Mais variedades de conversão de cor além de hexadecimal | | |
-| 🕒 | Compras via in app purchase para liberar mais variações de conversão de cor | | |
-| 🕒 | Login para salvar as cores no Firebase | | |
-| 🕒 | Feed de cores | | |
-| 🕒 | Melhorias de interface 3.0 | | |
+| ✔ | Integração com ```<PushButton.h>``` para direcionar-se ao andar desejado.  | `Concluído`| <a href=https://github.com/dihgab/ElevadorporVoz>alpha_1.0</a> |
+| ⌛ | Integração com ```<Servo.h>``` para rotação contínua do Servo Motor. | `Andamento`| <a href=https://github.com/dihgab/ElevadorporVoz>alpha_1.0</a> |
+| 🕒 | Integração com ```<VoiceRecognitionV3.h>``` e ```<SoftwareSerial.h>``` para reconhecimento de voz. | | |
+| 🕒 | Integração com ```<DFRobotDFPlayerMini.h>``` para reprodução de áudio correspondente ao andar. | | |
 
-## Contato
-Leonardo Santos - [in/leocoout][linkedin-url] - [@leocooutBR](https://twitter.com/leocooutBR) - leocoout.dev@gmail.com
-
-
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://www.linkedin.com/in/leocout/
