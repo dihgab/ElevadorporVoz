@@ -1,11 +1,11 @@
 <h3 align="center">Fundação Centro de Análise, Pesquisa e Inovação Tecnológica - FUCAPI</h3>
 <p align="CENTER">
-  <a href="https://github.com/leocoout/MyPalette">
+  <a href="https://github.com/dihgab/ElevadorporVoz">
     <img src="https://github.com/dihgab/ElevadorporVoz/blob/main/default/LogoFU.png" alt="Logo" width="80" height="80">
   </a>
 <br />
 <p align="center">
-  <a href="https://github.com/leocoout/MyPalette">
+  <a href="https://github.com/dihgab/ElevadorporVoz">
     <img src="https://github.com/dihgab/ElevadorporVoz/blob/main/default/ElevadorImage.jpg" alt="Logo" width="500" height="500">
   </a>
 
@@ -24,7 +24,7 @@
 ## Sobre o projeto
 Neste projeto, desenvolve-se o esquema de ligação e código de um elevador que tem como intuito reconhecer um dado andar solicitado e deslocar-se até este, um projeto que necessita de funções simultâneas entre motor, sensor de posição e botões de localização.
 
-Como sensor base para o reconhecimento de posição do Projeto Elevador Arduino, utilizou-se um Módulo Reed Switch que em conjunto com um imã de neodímio fixado no case de deslocamento tinha a função de identificar o andar em que se encontrava e interagir com os demais componentes do projeto.
+Como sensor base para o reconhecimento de posição do Projeto Elevador Arduino, utilizou-se um Módulo Reed Switch que em conjunto com um imã de neodímio fixado no case de deslocamento tinha a função de identificar o andar em que se encontrava e interagir com os demais componentes do projeto, incluindo o ***Módulo de Reconhecimento de Voz*** que facilita na integração dos PushButtons.
 
 ## Instalação
 Para fazer a instalação das bibliotecas e ter certeza de que o projeto funcione corretamente, utilize [Arduino IDE](https://www.arduino.cc/en/software).
