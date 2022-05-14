@@ -42,8 +42,8 @@ Acompanhe o roadmap das próximas features do projeto.
 
 | Status | Objetivo | Progresso | Release | 
 | :---: | :--- | --- | --- |
-| ✔ | Integração com ```<Servo.h>``` para rotação contínua do Servo Motor. | `Concluido`| <a href=https://github.com/dihgab/ElevadorporVoz>alpha_1.0</a> |
-| ✔ | Integração com ```<PushButton.h>``` para direcionar-se ao andar desejado.  | `Concluído`| <a href=https://github.com/dihgab/ElevadorporVoz>alpha_1.0</a> |
-| 🕒 | Integração com ```<VoiceRecognitionV3.h>``` e ```<SoftwareSerial.h>``` para reconhecimento de voz. | | |
+| ✔ | Integração com ```<Servo.h>``` para rotação contínua do Servo Motor. | `Concluido`| <a href=https://github.com/dihgab/ElevadorporVoz/tree/main/Bibliotecas/Servo>Librarie</a> |
+| ✔ | Integração com ```<PushButton.h>``` para direcionar-se ao andar desejado.  | `Concluído`| <a href=https://github.com/dihgab/ElevadorporVoz/tree/main/Bibliotecas/PushButton-master>Librarie</a> |
+| ⏳︎ | Integração com ```<VoiceRecognitionV3.h>``` e ```<SoftwareSerial.h>``` para reconhecimento de voz.  | `Andamento`| |
 | 🕒 | Integração com ```<DFRobotDFPlayerMini.h>``` para reprodução de áudio correspondente ao andar. | | |
 
