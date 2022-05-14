@@ -1,12 +1,12 @@
 <h3 align="center">Fundação Centro de Análise, Pesquisa e Inovação Tecnológica - FUCAPI</h3>
 <p align="CENTER">
   <a href="https://github.com/dihgab/ElevadorporVoz">
-    <img src="https://github.com/dihgab/ElevadorporVoz/blob/main/default/LogoFU.png" alt="Logo" width="80" height="80">
+    <img src="https://github.com/dihgab/ElevadorporVoz/blob/main/Default/LogoFU.png" alt="Logo" width="80" height="80">
   </a>
 <br />
 <p align="center">
   <a href="https://github.com/dihgab/ElevadorporVoz">
-    <img src="https://github.com/dihgab/ElevadorporVoz/blob/main/default/ElevadorImage.jpg" alt="Logo" width="500" height="500">
+    <img src="https://github.com/dihgab/ElevadorporVoz/blob/main/Default/ElevadorImage.jpg" alt="Logo" width="500" height="500">
   </a>
 
   <h3 align="center">Elevador por Voz</h3>
